@@ -113,9 +113,18 @@ body {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: large;
+  font-size: 5rem;
+  flex-direction: column;
+}
+.winning-message button {
+  font-size: 3rem;
+  background-color: #fff;
+  padding: 20px;
+}
+.winning-message.show {
+  display: flex;
 }
