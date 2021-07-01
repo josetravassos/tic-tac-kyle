@@ -50,9 +50,22 @@ body {
   border-right: none;
 }
 .cell.x::before,
-.cell.x::after,
+.cell.x::after {
+  background-color: blue;
+  animation: anim 0.3s;
+}
 .cell.circle::before {
-  background-color: black;
+  background-color: red;
+  animation: anim 0.3s;
+}
+@keyframes anim {
+  0% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 .cell.x::before,
 .cell.x::after,
@@ -127,4 +140,9 @@ body {
 }
 .winning-message.show {
   display: flex;
+}
+.restart-btn {
+  border-radius: 20px;
+  margin-top: 30px;
+  cursor: pointer;
 }
